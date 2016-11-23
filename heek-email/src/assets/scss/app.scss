@@ -21,6 +21,10 @@ html,
   background: $spitfire;
 
   .header-logo {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
     img {
       width: 5rem;
       height: auto; 
@@ -30,5 +34,11 @@ html,
   .container {
     background-color: transparent;
   }
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding: 2rem 5rem;
 }
 

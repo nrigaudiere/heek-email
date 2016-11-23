@@ -2,7 +2,7 @@
 Email templates for Heek using Foundation for Emails 2
 
 + For Production : 
-``bash
+``
 npm run build 
 ``
 
