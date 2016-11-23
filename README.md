@@ -7,6 +7,6 @@ npm run build
 ``
 
 + For Dev : 
-``bash
-npm run
+``
+npm start
 ``
