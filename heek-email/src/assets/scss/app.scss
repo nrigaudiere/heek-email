@@ -7,10 +7,11 @@ $spitfire: #F3306B;
 $insignia: #313E51;
 
 $creamWhite: #f3f3f3;
+$lightGrey: lightgrey;
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
   background: $creamWhite !important;
   color: $insignia;
@@ -27,7 +28,7 @@ html,
 
     img {
       width: 5rem;
-      height: auto; 
+      height: auto;
     }
   }
 
@@ -40,5 +41,35 @@ html,
   display: block;
   position: relative;
   padding: 2rem 5rem;
+
+  .signature {
+    hr {
+      border: 0;
+      border-top: 1px solid $lightGrey;
+    }
+
+    b {
+      display: block;
+    }
+
+    .heek-logo {
+      padding: 0 2rem;
+    }
+
+    .links {
+      display: block;
+      color: $spitfire;
+      font-size: 0.8rem;
+    }
+
+    .socials {
+      a {
+        width: 22px;
+        padding: 0.3rem;
+        display: block;
+        position: relative;
+      }
+    }
+  }
 }
 

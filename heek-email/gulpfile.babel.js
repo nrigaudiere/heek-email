@@ -28,7 +28,7 @@ gulp.task('build',
 
 // Build emails, run the server, and watch for file changes
 gulp.task('default',
-  gulp.series('build', watch));
+  gulp.series('build', server, watch));
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -63,6 +63,14 @@ function sass() {
       })))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest('dist/css'));
+}
+
+// Start a server with LiveReload to preview the site in
+function server(done) {
+  browser.init({
+    server: 'dist'
+  });
+  done();
 }
 
 // Copy and compress images
